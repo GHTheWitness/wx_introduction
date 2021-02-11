@@ -1,0 +1,44 @@
+<view 
+  class="box" 
+  hover-class="box-hover" 
+  hover-start-time="500" 
+  hover-stay-time="500"
+>
+  <view class="item" hover-class="item-hover" hover-stop-propagation></view>
+</view>
+
+<view class="out">
+  <text user-select>微信小程序</text>
+  <text>微信公众号</text>
+</view>
+
+<scroll-view scroll-x>
+  <view class="scr-out">
+    <view class="scr-box">111</view>
+    <view class="scr-box">222</view>
+    <view class="scr-box">333</view>
+    <view class="scr-box">444</view>
+    <view class="scr-box">555</view>
+    <view class="scr-box">666</view>
+  </view>
+</scroll-view>
+
+<scroll-view class="scroll2" scroll-y>
+  <view class="scr-out2">
+    <view class="scr-box2">111</view>
+    <view class="scr-box2">222</view>
+    <view class="scr-box2">333</view>
+    <view class="scr-box2">444</view>
+    <view class="scr-box2">555</view>
+    <view class="scr-box2">666</view>
+  </view>
+</scroll-view>
+
+<view>
+  <navigator class="link" url="/pages/logs/logs">跳转到日志</navigator>
+</view>
+
+<image class="img1" src="/images/1.jpg"></image>
+<image src="/images/1.jpg" mode="aspectFill"></image>
+<image src="/images/2.jpg" mode="widthFix"></image>
+<image src="/images/2.jpg" show-menu-by-longpress="true"></image>

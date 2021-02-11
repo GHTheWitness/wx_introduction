@@ -1,0 +1,14 @@
+<view>
+  {{title}}
+</view>
+
+<view style="color:#888">{{content}}</view>
+
+<view wx:for="{{listArr}}" wx:key="*this">{{item}}</view>
+
+<view>
+  {{obj.name}}-{{obj.age}}-{{obj.gender}}
+</view>
+
+<navigator url="/pages/demo/demo">跳转</navigator>
+<navigator url="/pages/demo/demo">跳转</navigator>

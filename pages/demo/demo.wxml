@@ -1,0 +1,41 @@
+<swiper class="banner" 
+indicator-dots 
+indicator-color="rgba(255,255,255,.5)" 
+indicator-active-color="#fff" 
+autoplay
+interval="1000"
+circular
+>
+  <swiper-item>
+    <image src="/images/s1.jpg" mode="widthFix"></image>
+  </swiper-item>
+  <swiper-item>
+    <image src="/images/s2.jpg" mode="widthFix"></image>
+  </swiper-item>
+  <swiper-item>
+    <image src="/images/s3.jpg" mode="widthFix"></image>
+  </swiper-item>
+</swiper>
+
+<view class="button-sp-area">
+  <button class="btn1" type="primary">登录</button>
+  <button class="btn1" type="warn">退出</button>
+  <button class="btn1" type="warn" disabled>退出</button>
+  <button class="btn1" loading>请等待</button>
+  <button class="btn1" open-type="contact">联系客服</button>
+</view>
+
+<form bindsubmit="onSubmit">
+  <input class="ipt" placeholder="请输入用户名" placeholder-class="iptPlace" auto-focus cursor-spacing="100" type="idcard"/>
+  <button form-type="submit">提交</button>
+  <switch checked="true"></switch>
+</form>
+
+<view style="padding:50px;text-align:center">
+  <icon type="success" size="100"></icon>
+  <view>提交成功！感谢您的配合</view>
+</view>
+
+<view style="padding:50px;">
+  <progress percent="60" show-info></progress>
+</view>
