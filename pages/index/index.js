@@ -15,6 +15,14 @@ Page({
       url: '../logs/logs'
     })
   },
+  clickBtn(){
+    wx.reLaunch({
+      url: '/pages/logs/logs?id=123',
+      success:res=>{
+        console.log(res);
+      }
+    })
+  },
   onLoad() {
     if (app.globalData.userInfo) {
       this.setData({

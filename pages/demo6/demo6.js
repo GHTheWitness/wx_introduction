@@ -1,23 +1,44 @@
-// pages/demo4/demo4.js
+// pages/demo6/demo6.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    title:""
+    dataList:[
+      {title:"这是标题1",time:"2021-01-01",url:"/images/s1.jpg"},
+      {title:"这是标题2",time:"2021-02-01",url:"/images/s2.jpg"},
+      {title:"这是标题3",time:"2021-02-12",url:"/images/s3.jpg"},
+    ],
+    resData:[],
+    num:1
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    setTimeout(()=>{
-      this.setData({
-        title:"小程序测试",
-        class:"AAA"
-      })
-    },1500)
+    this.getList()
+  },
+
+  getList(page=1){
+    wx.request({
+      url: 'https://edu.newsight.cn/wxList.php',
+      data:{
+        num:5,
+        page:page
+      },
+      success:res=>{
+        this.setData({
+          resData:res.data
+        })
+      }
+    })
+  },
+
+  nextPage(){
+    this.data.num++
+    this.getList(this.data.num)
   },
 
   /**

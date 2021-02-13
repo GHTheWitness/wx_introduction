@@ -1,1 +1,6 @@
-
+<navigator url="/pages/demo4/demo4">跳转到4</navigator>
+<view 
+bindtap="myTap" 
+style="width:200rpx;height:200rpx;background:pink;"
+data-name="小程序学习"
+>{{name}}</view>

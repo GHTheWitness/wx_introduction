@@ -1,21 +1,25 @@
-// pages/demo4/demo4.js
+// pages/demo5/demo5.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    title:""
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    setTimeout(()=>{
-      this.setData({
-        title:"小程序测试",
-        class:"AAA"
+    console.log(wx.getSystemInfoSync().model);
+    wx.showLoading({
+      title: '数据加载中....',
+    })
+    setTimeout(res=>{
+      wx.hideLoading()
+      wx.showToast({
+        title: '提交成功',
       })
     },1500)
   },

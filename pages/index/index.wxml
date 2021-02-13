@@ -7,6 +7,12 @@
   <view class="item" hover-class="item-hover" hover-stop-propagation></view>
 </view>
 
+<navigator url="/pages/demo/demo" open-type="switchTab" style="width:200rpx;height:200rpx;background:pink">
+  跳转到demo
+</navigator>
+
+<button type="primary" bindtap="clickBtn">跳转到日志</button>
+
 <view class="out">
   <text user-select>微信小程序</text>
   <text>微信公众号</text>
